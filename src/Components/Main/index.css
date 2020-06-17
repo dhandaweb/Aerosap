@@ -1,0 +1,23 @@
+.subHeader .title{
+    padding:20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom:1px solid #fff;
+  }
+  .subHeader .title p{
+    margin-bottom: 0;
+    }
+  
+  .subHeader h4{
+    color:#008fe2;
+  }
+
+  .bgGrey{
+    background: #f6f6f6;
+  }
+
+  .list{
+    overflow-y: auto;
+  }
+
+  
