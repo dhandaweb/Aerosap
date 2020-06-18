@@ -3,7 +3,7 @@ import './index.css';
 import { connect } from "react-redux";
 import { tooglevariantInformation } from "./../../../Redux/Actions";
 
-import { UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap';
+import { UncontrolledCollapse} from 'reactstrap';
 
 
 
