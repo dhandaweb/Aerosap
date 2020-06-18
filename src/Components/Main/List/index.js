@@ -10,32 +10,9 @@ export default class List extends React.Component {
 
     this.state = {
     };
-    
-
-
-    
       
   }
 
-  getsubItems(items){
-    if(items){
-    return items.map((item,i)=>{
-        return <div key={i}>
-            <p>{item.name} | {item.price} | {item.size}</p>
-        </div>})
-    }
-    else return ""
-}
-
-getItems(items){
-    if(items){
-    return items.map((item,i)=>{
-        return <div key={i}>
-            <h3>{item.name}</h3>
-            {this.getsubItems(item.items)}
-        </div>})
-    }
-}
 
   render() {
 

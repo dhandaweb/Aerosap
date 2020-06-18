@@ -2,4 +2,11 @@
     background: #ffffff;
     padding:10px;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.item i {
+    float:right;
+    padding:5px;
+    color:#6f6d6d;
 }

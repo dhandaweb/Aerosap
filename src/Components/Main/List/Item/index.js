@@ -25,7 +25,7 @@ export default class Item extends React.Component {
 
     render() {
       return (<div className="item shadowBottom">
-        <h1 onClick={this.toogleItem}>{this.props.data.name}</h1>
+        <h1 onClick={this.toogleItem}> {this.props.data.name} <i className={this.state.open ? "fas fa-chevron-up":"fas fa-chevron-down"}></i></h1>
         <Collapse isOpen={this.state.open}>
         { this.props.data.items.map((item,i)=>{
           return <SubItem key={item.name} data={item}/>

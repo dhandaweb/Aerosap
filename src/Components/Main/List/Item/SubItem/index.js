@@ -26,18 +26,20 @@ export  class SubItem extends React.Component {
 
   render() {
     return (<div className="subItem shadowBottom" >
-      <h6 onClick={this.toogleSubItem}>{this.props.data.name}</h6>
+      <h6 className="title" onClick={this.toogleSubItem}>{this.props.data.name} <i className={this.state.open ? "fas fa-chevron-up":"fas fa-chevron-down"}></i></h6>
 
       <Collapse isOpen={this.state.open}>
         {this.props.data.items.map((item, i) => {
           return <div key={i} className="product">
+             <Button onClick={()=>{
+              this.props.setVariantInformation({open:true,items:item.variants ? item.variants : [{"name":"No variant information"}]})
+            }}> Check variant</Button>
             <h5>{item.name}</h5> 
             <h6>Price: {item.price}</h6> 
             <h6>Size: {item.size}</h6> 
             <p>Description: {item.shortDescription}</p>
-            <Button onClick={()=>{
-              this.props.setVariantInformation({open:true,items:item.variants ? item.variants : [{"name":"No variant information"}]})
-            }}> Check variant</Button>
+            <span>Code: {item.code}</span> 
+          
             </div>
         })}
       </Collapse >

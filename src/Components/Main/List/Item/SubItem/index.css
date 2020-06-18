@@ -1,9 +1,23 @@
 .subItem{
-    padding:10px;
+   
     margin-bottom:5px;
+}
+.subItem .title{
+padding:10px;
+border-bottom:1px solid #f6f6f6;
 }
 
 .product{
     padding:10px;
     margin-bottom:5px;
+    border-bottom:1px solid #f6f6f6;
+}
+
+.product .btn{
+  float:right;
+  border: 0px;
+  cursor: pointer;
+  background: #00ccb2;
+  border-left: 1px solid #00ccb2;
+  box-shadow: none;
 }
