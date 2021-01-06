@@ -11,7 +11,7 @@
     "react-dom": "^16.10.1",
     "react-scripts": "2.1.8",
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "redux": "^4.0.4",
     "reactstrap": "^8.4.1",
     "react-redux": "^7.1.1",
